@@ -10,6 +10,8 @@
 		1F928D3B18268FE6007C28DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F928D3A18268FE6007C28DE /* Foundation.framework */; };
 		1F928D3E18268FE6007C28DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F928D3D18268FE6007C28DE /* main.m */; };
 		1F928D4218268FE6007C28DE /* leveldb_object_c.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F928D4118268FE6007C28DE /* leveldb_object_c.1 */; };
+		1F928D4A182693CD007C28DE /* LevelDB.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F928D49182693CD007C28DE /* LevelDB.mm */; };
+		1F928D5C18269439007C28DE /* libleveldb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F928D5B18269439007C28DE /* libleveldb.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,22 @@
 		1F928D3D18268FE6007C28DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F928D4018268FE6007C28DE /* leveldb-object-c-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "leveldb-object-c-Prefix.pch"; sourceTree = "<group>"; };
 		1F928D4118268FE6007C28DE /* leveldb_object_c.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = leveldb_object_c.1; sourceTree = "<group>"; };
+		1F928D48182693CD007C28DE /* LevelDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelDB.h; path = "leveldb-object-c/LevelDB.h"; sourceTree = "<group>"; };
+		1F928D49182693CD007C28DE /* LevelDB.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LevelDB.mm; path = "leveldb-object-c/LevelDB.mm"; sourceTree = "<group>"; };
+		1F928D4E18269439007C28DE /* c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c.h; sourceTree = "<group>"; };
+		1F928D4F18269439007C28DE /* cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cache.h; sourceTree = "<group>"; };
+		1F928D5018269439007C28DE /* comparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comparator.h; sourceTree = "<group>"; };
+		1F928D5118269439007C28DE /* db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = db.h; sourceTree = "<group>"; };
+		1F928D5218269439007C28DE /* env.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = env.h; sourceTree = "<group>"; };
+		1F928D5318269439007C28DE /* filter_policy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filter_policy.h; sourceTree = "<group>"; };
+		1F928D5418269439007C28DE /* iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iterator.h; sourceTree = "<group>"; };
+		1F928D5518269439007C28DE /* options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = "<group>"; };
+		1F928D5618269439007C28DE /* slice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slice.h; sourceTree = "<group>"; };
+		1F928D5718269439007C28DE /* status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = status.h; sourceTree = "<group>"; };
+		1F928D5818269439007C28DE /* table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table.h; sourceTree = "<group>"; };
+		1F928D5918269439007C28DE /* table_builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table_builder.h; sourceTree = "<group>"; };
+		1F928D5A18269439007C28DE /* write_batch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = write_batch.h; sourceTree = "<group>"; };
+		1F928D5B18269439007C28DE /* libleveldb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libleveldb.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F928D5C18269439007C28DE /* libleveldb.a in Frameworks */,
 				1F928D3B18268FE6007C28DE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +67,9 @@
 		1F928D2E18268FE6007C28DE = {
 			isa = PBXGroup;
 			children = (
+				1F928D48182693CD007C28DE /* LevelDB.h */,
+				1F928D49182693CD007C28DE /* LevelDB.mm */,
+				1F928D4B18269439007C28DE /* leveldb-library */,
 				1F928D3C18268FE6007C28DE /* leveldb-object-c */,
 				1F928D3918268FE6007C28DE /* Frameworks */,
 				1F928D3818268FE6007C28DE /* Products */,
@@ -86,6 +108,43 @@
 				1F928D4018268FE6007C28DE /* leveldb-object-c-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F928D4B18269439007C28DE /* leveldb-library */ = {
+			isa = PBXGroup;
+			children = (
+				1F928D4C18269439007C28DE /* include */,
+				1F928D5B18269439007C28DE /* libleveldb.a */,
+			);
+			path = "leveldb-library";
+			sourceTree = "<group>";
+		};
+		1F928D4C18269439007C28DE /* include */ = {
+			isa = PBXGroup;
+			children = (
+				1F928D4D18269439007C28DE /* leveldb */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		1F928D4D18269439007C28DE /* leveldb */ = {
+			isa = PBXGroup;
+			children = (
+				1F928D4E18269439007C28DE /* c.h */,
+				1F928D4F18269439007C28DE /* cache.h */,
+				1F928D5018269439007C28DE /* comparator.h */,
+				1F928D5118269439007C28DE /* db.h */,
+				1F928D5218269439007C28DE /* env.h */,
+				1F928D5318269439007C28DE /* filter_policy.h */,
+				1F928D5418269439007C28DE /* iterator.h */,
+				1F928D5518269439007C28DE /* options.h */,
+				1F928D5618269439007C28DE /* slice.h */,
+				1F928D5718269439007C28DE /* status.h */,
+				1F928D5818269439007C28DE /* table.h */,
+				1F928D5918269439007C28DE /* table_builder.h */,
+				1F928D5A18269439007C28DE /* write_batch.h */,
+			);
+			path = leveldb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F928D4A182693CD007C28DE /* LevelDB.mm in Sources */,
 				1F928D3E18268FE6007C28DE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,8 +277,18 @@
 		1F928D4618268FE6007C28DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "leveldb-object-c/leveldb-object-c-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$SOURCE_ROOT/leveldb-library/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/tad/workspace/github/leveldb-object-c/leveldb-library",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -226,8 +296,18 @@
 		1F928D4718268FE6007C28DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "leveldb-object-c/leveldb-object-c-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$SOURCE_ROOT/leveldb-library/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/tad/workspace/github/leveldb-object-c/leveldb-library",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
