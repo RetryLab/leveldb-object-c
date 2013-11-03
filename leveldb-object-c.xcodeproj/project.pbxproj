@@ -11,7 +11,7 @@
 		1F928D3E18268FE6007C28DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F928D3D18268FE6007C28DE /* main.m */; };
 		1F928D4218268FE6007C28DE /* leveldb_object_c.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F928D4118268FE6007C28DE /* leveldb_object_c.1 */; };
 		1F928D4A182693CD007C28DE /* LevelDB.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F928D49182693CD007C28DE /* LevelDB.mm */; };
-		1F928D5C18269439007C28DE /* libleveldb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F928D5B18269439007C28DE /* libleveldb.a */; };
+		A5A00B221826A24D00CAD0E6 /* libleveldb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F928D5B18269439007C28DE /* libleveldb.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F928D5C18269439007C28DE /* libleveldb.a in Frameworks */,
+				A5A00B221826A24D00CAD0E6 /* libleveldb.a in Frameworks */,
 				1F928D3B18268FE6007C28DE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,8 +113,8 @@
 		1F928D4B18269439007C28DE /* leveldb-library */ = {
 			isa = PBXGroup;
 			children = (
-				1F928D4C18269439007C28DE /* include */,
 				1F928D5B18269439007C28DE /* libleveldb.a */,
+				1F928D4C18269439007C28DE /* include */,
 			);
 			path = "leveldb-library";
 			sourceTree = "<group>";
@@ -288,6 +288,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/tad/workspace/github/leveldb-object-c/leveldb-library",
+					"/Users/shuo/Project/Objective-C/leveldb-object-c/leveldb-library",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -307,6 +308,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/tad/workspace/github/leveldb-object-c/leveldb-library",
+					"/Users/shuo/Project/Objective-C/leveldb-object-c/leveldb-library",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -331,6 +333,7 @@
 				1F928D4718268FE6007C28DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
