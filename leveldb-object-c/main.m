@@ -18,7 +18,7 @@ int main(int argc, const char * argv[])
         NSLog(@"Leveldb Put and Get Test.....");
         
         
-        LevelDB *ldb = [LevelDB databaseInLibraryWithName:@"test.ldb"];
+        LevelDB *ldb = [LevelDB databaseInLibraryWithName:@"/hdd1/objc_db"];
         
         //test string
         [ldb putObject:@"laval" forKey:@"string_test"];

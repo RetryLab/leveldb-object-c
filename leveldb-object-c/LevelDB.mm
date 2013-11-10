@@ -50,6 +50,7 @@ static id ObjectFromSlice(Slice v) {
     self = [super init];
     if (self) {
         _path = path;
+        NSLog(@"The DB PATH:　%s", [_path UTF8String]);
         Options options;
         options.create_if_missing = true;
         Status status = leveldb::DB::Open(options, [_path UTF8String], &db);
@@ -62,17 +63,10 @@ static id ObjectFromSlice(Slice v) {
         }
         
     }
-    
     return self;
 }
 
-+ (NSString *)libraryPath {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
-    return [paths objectAtIndex:0];
-}
-
-+ (LevelDB *)databaseInLibraryWithName:(NSString *)name {
-    NSString *path = [[LevelDB libraryPath] stringByAppendingPathComponent:name];
++ (LevelDB *)databaseInLibraryWithName:(NSString *)path {
     LevelDB *ldb = [[LevelDB alloc] initWithPath:path];
     return ldb;
 }
